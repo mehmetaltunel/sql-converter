@@ -81,10 +81,10 @@ src/
 
 ## Support
 
-If this tool saves you time, consider sponsoring:
+If this tool saves you time, you can sponsor the project on GitHub:
 
-**[→ github.com/sponsors/mehmetaltunel](https://github.com/sponsors/mehmetaltunel)**
+[![GitHub Sponsors](https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa?style=flat-square&logo=github)](https://github.com/sponsors/mehmetaltunel)
 
 ## License
 
-MIT
+This project is licensed under the [MIT License](LICENSE).
