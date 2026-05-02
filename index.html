@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ── Primary SEO ───────────────────────────────────────────────────────── -->
+  <title>EF Core SQL Converter — Resolve Parameters & Format SQL Instantly</title>
+  <meta name="description" content="Paste your EF Core / Entity Framework Core log and instantly get clean, executable SQL with parameters resolved. Supports PostgreSQL, MSSQL, MySQL. Free, runs in your browser." />
+  <meta name="keywords" content="ef core sql converter, entity framework core log, ef core parameters, executed dbcommand sql, ef core log to sql, dotnet sql formatter, ef core query analyzer, entity framework sql resolver, ef core log parser, postgresql mssql mysql converter" />
+  <meta name="author" content="mmT — mehmetaltunel" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="https://efcore.xyzapps.net/" />
+
+  <!-- ── Open Graph ────────────────────────────────────────────────────────── -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://efcore.xyzapps.net/" />
+  <meta property="og:site_name"   content="EF Core SQL Converter" />
+  <meta property="og:title"       content="EF Core SQL Converter — Resolve Parameters & Format SQL Instantly" />
+  <meta property="og:description" content="Paste your EF Core log, get clean executable SQL in seconds. Resolves @parameters, formats clauses, analyzes complexity. Free & runs in your browser." />
+  <meta property="og:image"       content="https://efcore.xyzapps.net/og-image.png" />
+  <meta property="og:image:width"  content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt"   content="EF Core SQL Converter — paste log, get SQL" />
+  <meta property="og:locale"      content="en_US" />
+
+  <!-- ── Twitter Card ─────────────────────────────────────────────────────── -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:site"        content="@mehmetaltunel" />
+  <meta name="twitter:creator"     content="@mehmetaltunel" />
+  <meta name="twitter:title"       content="EF Core SQL Converter — Resolve Parameters & Format SQL" />
+  <meta name="twitter:description" content="Paste EF Core / Entity Framework Core logs and get clean executable SQL instantly. Free tool, runs in your browser." />
+  <meta name="twitter:image"       content="https://efcore.xyzapps.net/og-image.png" />
+
+  <!-- ── JSON-LD Structured Data ──────────────────────────────────────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://efcore.xyzapps.net/#app",
+        "name": "EF Core SQL Converter",
+        "url": "https://efcore.xyzapps.net/",
+        "description": "Free online tool to convert Entity Framework Core (EF Core) logs into clean, executable SQL queries. Resolves parameter placeholders, formats SQL clauses, analyzes query complexity, and supports PostgreSQL, MSSQL and MySQL dialects.",
+        "applicationCategory": "DeveloperApplication",
+        "applicationSubCategory": "SQL Tool",
+        "operatingSystem": "Any (Browser-based)",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "featureList": [
+          "EF Core log parameter resolution",
+          "SQL formatter and beautifier",
+          "Query complexity analysis",
+          "PostgreSQL to MSSQL conversion",
+          "PostgreSQL to MySQL conversion",
+          "CASE WHEN formatting",
+          "Subquery indentation",
+          "Query history (localStorage)",
+          "One-click copy to clipboard"
+        ],
+        "screenshot": "https://efcore.xyzapps.net/og-image.png",
+        "author": {
+          "@type": "Person",
+          "name": "Mehmet Altunel",
+          "url": "https://github.com/mehmetaltunel"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "xyzapps",
+          "url": "https://xyzapps.net"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://efcore.xyzapps.net/#website",
+        "url": "https://efcore.xyzapps.net/",
+        "name": "EF Core SQL Converter",
+        "description": "Convert EF Core logs to executable SQL instantly",
+        "publisher": { "@id": "https://efcore.xyzapps.net/#app" }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is EF Core SQL Converter?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "EF Core SQL Converter is a free browser-based tool that takes Entity Framework Core (EF Core) log output — which contains parameterized SQL and a Parameters=[...] block — and produces clean, executable SQL with all parameter values substituted inline."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I use EF Core SQL Converter?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Copy the log lines from your EF Core output (including the [Parameters=...] line and the SQL query), paste them into the left panel, then press Ctrl+Enter or click Convert. The resolved, formatted SQL appears on the right."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does it support multiple queries at once?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. You can paste an entire EF Core log block containing many Executed DbCommand entries. Each query is parsed, resolved and formatted individually."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which SQL dialects are supported?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The tool natively handles PostgreSQL output from EF Core. It can also convert the SQL to MSSQL (SQL Server) syntax — translating double-quoted identifiers to brackets, LIMIT to TOP, and :: casts to CAST() — or to MySQL syntax with backtick identifiers."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is my data sent to a server?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Everything runs entirely in your browser. No log data, SQL, or parameters ever leave your machine."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- ── Favicon ───────────────────────────────────────────────────────────── -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+
+  <!-- ── Preconnect / Performance ─────────────────────────────────────────── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+
+  <!-- ── Theme color ───────────────────────────────────────────────────────── -->
+  <meta name="theme-color" content="#111214" />
+  <meta name="color-scheme" content="dark" />
+</head>
+<body>
+  <!--
+    Static content for crawlers — hidden visually, indexed by search engines.
+    Describes what the app does so bots understand without executing JS.
+  -->
+  <noscript>
+    <main style="font-family:sans-serif;max-width:800px;margin:40px auto;padding:0 20px;color:#111">
+      <h1>EF Core SQL Converter</h1>
+      <p>
+        A free developer tool to convert <strong>Entity Framework Core (EF Core)</strong> log output into
+        clean, executable SQL. Paste a log block containing <code>[Parameters=[...]]</code> and the raw SQL,
+        and the tool substitutes all parameter placeholders with their real values — strings, numbers, GUIDs,
+        datetimes and NULLs.
+      </p>
+      <h2>Features</h2>
+      <ul>
+        <li>Resolves EF Core parameter placeholders inline</li>
+        <li>Formats SQL: SELECT columns, WHERE clauses, JOINs, CASE WHEN, subqueries</li>
+        <li>Query complexity analysis — JOIN count, subquery depth, condition count</li>
+        <li>Dialect conversion: PostgreSQL → MSSQL (SQL Server) or MySQL</li>
+        <li>Conversion history saved locally in your browser</li>
+        <li>Supports multiple queries per paste</li>
+        <li>100% client-side — nothing is sent to any server</li>
+      </ul>
+      <p>Enable JavaScript to use the tool.</p>
+    </main>
+  </noscript>
+
+  <div id="app"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

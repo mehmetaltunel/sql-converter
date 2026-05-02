@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run dev *)",
+      "Bash(npm run build *)",
+      "Bash(npx tsc --noEmit *)",
+      "Bash(curl -s *)",
+      "Bash(curl -sI *)",
+      "Bash(curl -sL *)",
+      "Bash(curl -sIL *)",
+      "Bash(dig *)",
+      "Bash(flutter analyze *)",
+      "Bash(php -l *)"
+    ]
+  }
+}

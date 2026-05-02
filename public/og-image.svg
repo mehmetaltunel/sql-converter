@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#111214"/>
+  <rect width="1200" height="4" fill="#3b82f6"/>
+
+  <!-- Left code block -->
+  <rect x="60" y="80" width="480" height="470" rx="10" fill="#18191c" stroke="#2a2c30" stroke-width="1"/>
+  <rect x="60" y="80" width="480" height="36" rx="10" fill="#1e2023"/>
+  <rect x="60" y="106" width="480" height="10" fill="#1e2023"/>
+  <text x="76" y="102" font-family="monospace" font-size="11" fill="#55595f" letter-spacing="1">EF CORE LOG</text>
+
+  <text x="76" y="142" font-family="monospace" font-size="11" fill="#55595f">[Parameters=[</text>
+  <text x="76" y="158" font-family="monospace" font-size="11" fill="#86efac">  @__userId_0=</text>
+  <text x="208" y="158" font-family="monospace" font-size="11" fill="#fbbf24">'a1b2c3d4-dead-beef...'</text>
+  <text x="76" y="174" font-family="monospace" font-size="11" fill="#86efac">  @__isActive_1=</text>
+  <text x="220" y="174" font-family="monospace" font-size="11" fill="#fbbf24">True</text>
+  <text x="76" y="190" font-family="monospace" font-size="11" fill="#55595f">]]</text>
+
+  <text x="76" y="222" font-family="monospace" font-size="11" fill="#60a5fa" font-weight="bold">SELECT</text>
+  <text x="76" y="238" font-family="monospace" font-size="11" fill="#d4d8de">  u."Id", u."Email",</text>
+  <text x="76" y="254" font-family="monospace" font-size="11" fill="#d4d8de">  u."CreatedAt"</text>
+  <text x="76" y="270" font-family="monospace" font-size="11" fill="#60a5fa" font-weight="bold">FROM</text>
+  <text x="76" y="286" font-family="monospace" font-size="11" fill="#d4d8de">  "App"."Users" AS u</text>
+  <text x="76" y="302" font-family="monospace" font-size="11" fill="#60a5fa" font-weight="bold">WHERE</text>
+  <text x="76" y="318" font-family="monospace" font-size="11" fill="#d4d8de">  u."Id" = @__userId_0</text>
+  <text x="76" y="334" font-family="monospace" font-size="11" fill="#60a5fa" font-weight="bold">  AND</text>
+  <text x="116" y="334" font-family="monospace" font-size="11" fill="#d4d8de"> u."IsActive" = @__isActive_1</text>
+  <text x="76" y="350" font-family="monospace" font-size="11" fill="#60a5fa" font-weight="bold">LIMIT</text>
+  <text x="116" y="350" font-family="monospace" font-size="11" fill="#fbbf24"> 1</text>
+
+  <!-- Arrow -->
+  <text x="580" y="325" font-family="monospace" font-size="32" fill="#3b82f6" text-anchor="middle">→</text>
+
+  <!-- Right code block -->
+  <rect x="660" y="80" width="480" height="470" rx="10" fill="#18191c" stroke="#2a2c30" stroke-width="1"/>
+  <rect x="660" y="80" width="480" height="36" rx="10" fill="#1e2023"/>
+  <rect x="660" y="106" width="480" height="10" fill="#1e2023"/>
+  <text x="676" y="102" font-family="monospace" font-size="11" fill="#55595f" letter-spacing="1">SQL</text>
+
+  <text x="676" y="142" font-family="monospace" font-size="11" fill="#60a5fa" font-weight="bold">SELECT</text>
+  <text x="676" y="158" font-family="monospace" font-size="11" fill="#d4d8de">    u."Id",</text>
+  <text x="676" y="174" font-family="monospace" font-size="11" fill="#d4d8de">    u."Email",</text>
+  <text x="676" y="190" font-family="monospace" font-size="11" fill="#d4d8de">    u."CreatedAt"</text>
+  <text x="676" y="214" font-family="monospace" font-size="11" fill="#60a5fa" font-weight="bold">FROM</text>
+  <text x="676" y="230" font-family="monospace" font-size="11" fill="#d4d8de">    "App"."Users" AS u</text>
+  <text x="676" y="254" font-family="monospace" font-size="11" fill="#60a5fa" font-weight="bold">WHERE</text>
+  <text x="676" y="270" font-family="monospace" font-size="11" fill="#d4d8de">    u."Id" =</text>
+  <text x="676" y="286" font-family="monospace" font-size="11" fill="#86efac">        'a1b2c3d4-dead-beef-cafe-112233445566'</text>
+  <text x="676" y="302" font-family="monospace" font-size="11" fill="#60a5fa" font-weight="bold">    AND</text>
+  <text x="722" y="302" font-family="monospace" font-size="11" fill="#d4d8de"> u."IsActive" =</text>
+  <text x="676" y="318" font-family="monospace" font-size="11" fill="#fbbf24">        TRUE</text>
+  <text x="676" y="342" font-family="monospace" font-size="11" fill="#60a5fa" font-weight="bold">LIMIT</text>
+  <text x="718" y="342" font-family="monospace" font-size="11" fill="#fbbf24"> 1</text>
+
+  <!-- Title -->
+  <text x="600" y="590" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#d4d8de" text-anchor="middle">EF Core SQL Converter</text>
+  <text x="600" y="612" font-family="system-ui, sans-serif" font-size="13" fill="#55595f" text-anchor="middle">efcore.xyzapps.net</text>
+</svg>
